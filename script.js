@@ -100,4 +100,4 @@ var productsState = [
   
   
   // CALL THE DISPLAY FUNCTION
-  homeDisplayProducts()
+  homeDisplayProducts() 
