@@ -100,4 +100,12 @@ var productsState = [
   
   
   // CALL THE DISPLAY FUNCTION
-  homeDisplayProducts() 
+  homeDisplayProducts()
+  
+  document.getElementById('expForm').addEventListener('submit', addExpense);
+
+
+  var nav = document.getElementById('nav').value;
+  var active = document.getElementById('active'),value;
+   
+  va
