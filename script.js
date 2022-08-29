@@ -73,7 +73,7 @@ var Markham =document.getElementById("Markham")
 
 let countnum =0;
 
-function call(){
+function display(){
   Markham = document.getElementById("Markham").innerHTML = ++ countnum;
 }
 
@@ -96,7 +96,7 @@ function homeDisplayProducts() {
                 ${'<span>*</span>'.repeat(productsState[i].rates)}
               </div>
               <div class="product__price">R <span>${productsState[i].price}</span></div> 
-                <button onclick="show()">+ ADD TO CART</button> 
+                <button onclick="display()">+ ADD TO CART</button> 
           </div>
     
     `
