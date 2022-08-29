@@ -98,6 +98,7 @@ function homeDisplayProducts() {
               <div class="product__price">R <span>${productsState[i].price}</span></div> 
                 <button onclick="display()">+ ADD TO CART</button> 
           </div>
+
     
     `
     

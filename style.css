@@ -286,3 +286,7 @@ a,
       -50px -50px 0px -30px rgba(0, 0, 0, 0);
   }
 }
+
+.display {
+  text-align: center;
+}
