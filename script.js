@@ -73,7 +73,7 @@ var Markham =document.getElementById("Markham")
 
 let countnum =0;
 
-function show(){
+function call(){
   Markham = document.getElementById("Markham").innerHTML = ++ countnum;
 }
 
