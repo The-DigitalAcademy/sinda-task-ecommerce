@@ -15,7 +15,7 @@
       <!--NAVBAR-->
       <nav>
         <a href="./index.html" class="active">Home</a>
-        <a href="#">Cart: <span id="Markham">0</span></a>
+        <a href="#">Cart: <span id="cartNum">0</span></a>
       </nav>
 
       <!--PRODUCTS SECTION-->
@@ -33,12 +33,15 @@
             <span>*</span><span>*</span><span>*</span><span>*</span>
           </div>
           <div class="product__price">R <span>2000</span></div>
-          <button onclick="display()">+ ADD TO CART</button>
+          <button>+ ADD TO CART</button>
         </div>
       </section>
     </div>
     <br><br>
-   <h2 class="display">Here...</h2>
+    
+    <h2 id="display">here</h2>
+
+   <section class="products" id="cartDisplay"></section>
 
     <!--JAVASCRIPT-->
     <script src="./script.js"></script>

@@ -65,16 +65,19 @@ var productsState = [
       'https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=825&q=80',
   },
 ]
+ 
+// var productsState =[]
 
+
+// let selectedPeople = []
 
 // LINK JS TO HTML ELEMENT
 const products = document.getElementById('products')
-var Markham =document.getElementById("Markham")
 
-let countnum =0;
+let number =0;
 
-function display(){
-  Markham = document.getElementById("Markham").innerHTML = ++ countnum;
+function display(){ 
+  cartNum = document.getElementById("cartNum").innerHTML = ++ number;
 }
 
 // DISPLAY PRODUCTS IN HOME PAGE
