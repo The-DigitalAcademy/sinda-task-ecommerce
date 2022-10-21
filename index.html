@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!--LOGO-->
-    <div class="logo"><span>DA</span> PWD shopping app</div>
+    
+    <h2 class="logo"><span></span> SHOPING SPORTS</h2>
 
-    <div class="container">
-      <!--NAVBAR-->
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://res.cloudinary.com/moresport/image/upload/a_0,c_fill,f_auto,q_auto:good,w_690/v1575961299/uploads/assets/1164371-WHITEIRONRED-6-GRL.jpg"width="100%" height="600px" alt="Card image">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+ 
+    <dim v class="container">
+ 
       <nav>
         <a href="./index.html" class="active">Home</a>
         <a href="#">Cart: <span id="cartNum">0</span></a>
       </nav>
 
-      <!--PRODUCTS SECTION-->
       <section class="products" id="products">
         <div class="product">
           <div class="product__img">
@@ -33,17 +38,30 @@
             <span>*</span><span>*</span><span>*</span><span>*</span>
           </div>
           <div class="product__price">R <span>2000</span></div>
-          <button>+ ADD TO CART</button>
+          <button onclick="showcount()">Buy now</button>
         </div>
       </section>
-    </div>
-    <br><br>
+
     
-    <h2 id="display">here</h2>
+      <br><br>
 
-   <section class="products" id="cartDisplay"></section>
+      <div>
+      <h1>TOTAL <span id="DatadTotal">0</span></h1>
+      </div>
+      <br>
+      <section class="displayCart">
+        <div class="product1" id="cartsNumber">
+          <div class="shopbox">
+          <div class="product__img">
+            
+        </section>
 
-    <!--JAVASCRIPT-->
+        <div class="products" id="picturetCart"></div>
+
+    </div>
+
+
+    
     <script src="./script.js"></script>
   </body>
 </html>

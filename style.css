@@ -3,7 +3,7 @@
   --bodyBg: #eee;
   --white: #fff;
   --bodyColor: rgb(63, 63, 63);
-  --primary: rgb(159, 13, 139);
+  --primary: rgb(13, 159, 35);
   --transition: ease-in-out 300ms;
   --gold: rgb(255, 157, 0);
 }
@@ -255,6 +255,7 @@ a,
     font-size: 1.2rem;
   }
 
+  
   .product .product__price {
     font-size: 1.5rem;
     font-weight: bold;
@@ -289,4 +290,8 @@ a,
 
 .display {
   text-align: center;
+}
+
+body {
+  background-color: rgba(163, 164, 161, 0.927);
 }

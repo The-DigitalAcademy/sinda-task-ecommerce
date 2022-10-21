@@ -2,88 +2,74 @@
 var productsState = [
   {
     id: 1,
-    name: 'Macbook Pro',
-    price: 28000,
-    rates: 5,
+    name: 'NIKE CR7',
+    price: 1500,
     image:
-      'https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU7gmCwo0h5F1zFHnfcACd9lwKK1n5rXAdrA&usqp=CAU',
   },
   {
     id: 2,
-    name: 'Iphone 13 Pro',
-    price: 23000,
-    rates: 3,
+    name: 'NIKE',
+    price: 1000,
     image:
-      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShOlv27_eRU5aJKtKJz4V1gYH9YrSFWj3Xqw&usqp=CAU',
   },
   {
     id: 1,
-    name: 'Iphone 6 C',
-    price: 7000,
-    rates: 2,
-    image:
-      'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80',
-  },
-  {
-    id: 1,
-    name: 'HP Laptop',
-    price: 8000,
-    rates: 1,
-    image:
-      'https://images.unsplash.com/photo-1589561084283-930aa7b1ce50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
-  },
-  {
-    id: 1,
-    name: 'Dell Laptop',
-    price: 4000,
-    rates: 1,
-    image:
-      'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-  },
-  {
-    id: 1,
-    name: 'Macbook Pro',
-    price: 15000,
-    rates: 5,
-    image:
-      'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-  },
-  {
-    id: 1,
-    name: 'Playstation 5',
-    price: 20000,
-    rates: 4,
-    image:
-      'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-  },
-  {
-    id: 1,
-    name: 'PS 4 Joystick',
+    name: 'NIKE',
     price: 1200,
-    rates: 3,
     image:
-      'https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=825&q=80',
+      'https://i.pinimg.com/236x/b1/89/ea/b189ea4734ff58cd0007dea9000b84f3--soccer-cleats-nike.jpg',
   },
-]
- 
-// var productsState =[]
+  {
+    id: 1,
+    name: 'NIKE',
+    price: 2000,
+    image:
+      'https://i.pinimg.com/736x/c4/b6/7c/c4b67cf2d52199f15065968c313d0db0--cristiano-ronaldo--mercurial-vapor.jpg',
+  },
+  {
+    id: 1,
+    name: 'NIKE',
+    price: 1100,
+    image:
+      'https://ae01.alicdn.com/kf/H437be87e714a467cab5986192c81b70eZ.jpg',
+  },
+  {
+    id: 1,
+    name: 'ADIDAS',
+    price: 1500,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEZysklEk_wWgt8d3d6dxSeZKQyKVqxiFeAWg3l2RsW6SKZdd_xwOkr63vWhMjcLqRo0&usqp=CAU',
+  },
+  {
+    id: 1,
+    name: 'ADIDAS',
+    price: 1000,
+    image:
+      'https://assets.adidas.com/images/w_1880,f_auto,q_auto/14b1b4bd2f494e00a6fdae0400f4482a_9366/GW2368_01_standard.jpg',
+  },
+  {
+    id: 1,
+    name: 'ADIDAS',
+    price: 1200,
+    image:
+      'https://res.cloudinary.com/moresport/image/upload/a_0,c_fill,f_auto,q_auto:good,w_690/v1575961299/uploads/assets/1160645-FTWRWHITECOREBLACKSOLARRE-1-wjV.jpg',
+  },
+] 
 
+var selectedPeople = []
 
-// let selectedPeople = []
-
-// LINK JS TO HTML ELEMENT
+// display//
 const products = document.getElementById('products')
+const picturetCart = document.getElementById('picturetCart');
 
-let number =0;
 
-function display(){ 
-  cartNum = document.getElementById("cartNum").innerHTML = ++ number;
-}
-
-// DISPLAY PRODUCTS IN HOME PAGE
+// DISPLAY PRODUCTS //
 function homeDisplayProducts() {
     products.innerHTML = ""
-  // loop into productsState and display
+
+  // productsState and display
   for (let i = 0; i < productsState.length; i++) {
     products.innerHTML += `
     
@@ -99,9 +85,8 @@ function homeDisplayProducts() {
                 ${'<span>*</span>'.repeat(productsState[i].rates)}
               </div>
               <div class="product__price">R <span>${productsState[i].price}</span></div> 
-                <button onclick="display()">+ ADD TO CART</button> 
+                <button onclick="showcount(${i})">+ ADD TO CART</button> 
           </div>
-
     
     `
     
@@ -109,5 +94,68 @@ function homeDisplayProducts() {
 }
 
 
-// CALL THE DISPLAY FUNCTION
-homeDisplayProducts()
+function showcount(i) {
+    selectedPeople.push(productsState[i])
+    document.getElementById('cartNum').innerHTML = selectedPeople.length;
+
+  picture();
+  calculator();
+  homeDisplayProducts();
+
+}
+
+
+function picture() {
+  picturetCart.innerHTML = ""
+
+ // productsState and display
+ for (let i = 0; i < selectedPeople.length; i++) {
+  picturetCart.innerHTML += `
+  
+  <div class="product">
+      <div class="product__img">
+          <img
+            src=${selectedPeople[i].image}
+            alt=""
+          />
+      </div>
+          <div class="product__name">${selectedPeople[i].name}</div>
+            <div class="product__rate">
+              ${'<span>*</span>'.repeat(selectedPeople[i].rates)}
+            </div>
+            <div class="product__price">R <span>${selectedPeople[i].price}</span></div> 
+              <button onclick="removed(${i})"> remove</button> 
+        </div>
+  
+  `
+      
+}
+
+}
+
+
+function removed(i) {
+  selectedPeople.splice(i,1)
+  document.getElementById('cartNum').innerHTML = selectedPeople.length;
+
+  picture();
+  calculator();
+  homeDisplayProducts();
+}
+
+picture();
+homeDisplayProducts() 
+
+// total calculator
+function calculator() {
+  let total = 0;
+
+  for (let i = 0; i <selectedPeople.length; i++) {
+      total += (selectedPeople)[i].price
+    }
+
+    DatadTotal.innerHTML = "R" +total
+
+    picture();
+    homeDisplayProducts(); 
+}
