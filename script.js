@@ -61,8 +61,8 @@ var productsState = [
 var selectedPeople = []
 
 // display//
-const products = document.getElementById('products')
-const picturetCart = document.getElementById('picturetCart');
+const products = document.getElementById('products');
+const DatadTotal = document.getElementById('DatadTotal');
 
 
 // DISPLAY PRODUCTS //
@@ -98,10 +98,11 @@ function showcount(i) {
     selectedPeople.push(productsState[i])
     document.getElementById('cartNum').innerHTML = selectedPeople.length;
 
-  picture();
   calculator();
+  saveToLocalStorage();
+  getLocalStorage();
   homeDisplayProducts();
-
+  picture();
 }
 
 
@@ -133,18 +134,18 @@ function picture() {
 
 }
 
-
 function removed(i) {
+  getLocalStorage()
   selectedPeople.splice(i,1)
   document.getElementById('cartNum').innerHTML = selectedPeople.length;
 
-  picture();
   calculator();
+  saveToLocalStorage();
+  getLocalStorage();
   homeDisplayProducts();
+  picture();
 }
 
-picture();
-homeDisplayProducts() 
 
 // total calculator
 function calculator() {
@@ -156,6 +157,17 @@ function calculator() {
 
     DatadTotal.innerHTML = "R" +total
 
-    picture();
-    homeDisplayProducts(); 
 }
+
+function saveToLocalStorage() {
+  let data = JSON.stringify(productsState)
+  localStorage.setItem('productsState', data)
+}
+
+function getLocalStorage() {
+  let data = JSON.parse(localStorage.getItem('productsState'))
+  productsState = data
+}
+
+homeDisplayProducts();
+picture();
